@@ -5,6 +5,16 @@ from scapy.all import *
 from random import randint
 from argparse import ArgumentParser
 
+"""
+FIN = 0x01
+SYN = 0x02
+RST = 0x04
+PSH = 0x08
+ACK = 0x10
+URG = 0x20
+ECE = 0x40
+CWR = 0x80
+"""
 
 def randomIP():
     ip = ".".join(map(str, (randint(0, 255) for _ in range(4))))
